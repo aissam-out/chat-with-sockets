@@ -1,0 +1,84 @@
+:root {
+    --main-color: #3d405b;
+    --primary-color: #f2cc8f;
+    --secondary-color: #f4f1de;
+    --tertiary-color: #e07a5f;
+    --error-color: red;
+    --system-msg-color: #656d78;
+}
+
+h1 {
+    color: var(--main-color);
+}
+
+#main-section {
+    overflow: hidden;
+    width: 100%;
+}
+
+.jumbotron {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-family: "Gill Sans", sans-serif;
+    background-image: url("../images/banner.jpg");
+    /* image source: https://pixabay.com/users/fotocitizen-397314/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=569222 */
+}
+
+#image-section {
+    min-width: 30%;
+    max-width: 30%;
+    margin-right: 2em;
+    padding: 0 0 0 2em;
+    float: left;
+}
+
+img {
+    float: left;
+    max-width: 100%;
+    max-height: 480px;
+}
+
+.card {
+  border: none;
+}
+
+#righthand-side {
+    padding: 0 3em 0 0;
+    overflow: hidden;
+}
+
+h2 {
+    color: var(--main-color);
+    font-family: system-ui;
+}
+
+#righthand-side p {
+    font-size: 0.8em;
+    color: var(--system-msg-color);
+}
+
+@media (max-width: 588px) {
+    picture {
+        display: none;
+    }
+    #righthand-side {
+        padding-left: 1.5em;
+    }
+}
+
+@media (min-width: 1000px) {
+    #righthand-side {
+        max-width: 50%;
+    }
+}
+
+.formError {
+    list-style-type:none;
+    padding:0px;
+    color: var(--error-color);
+}
+
+input[type='text']:focus, input[type='password']:focus {
+    border-color: var(--main-color);
+    box-shadow: 0px 0px 6px var(--main-color);
+}
