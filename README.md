@@ -20,6 +20,7 @@ Upon login, users are automatically redirected to the Genaral chatroom. They can
 Connected users can be viewed in the "Users" section. To initiate a private chat, simply click on a user and they will receive a notification, allowing you to start the private conversation.
 
 <img align="right" src="./images/chatprivate.png" alt="Private chat page">
+<br><br>
 
 <img align="right" src="./images/chatprivate2.png" alt="Private chat page">
 
