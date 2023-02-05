@@ -32,7 +32,7 @@ To do so, and assuming you have Docker installed in your machine, pull the posgr
 
 Now that you have the DB up and running, you can connect to postgres using command line, or something like DBeaver, then create a "chatDB" database.
 
-Finally, you'll have to tell the code about the URI of this postgres instance. You can do it using an .env file  where you can put `export POSTGRES_URI="postgresql://postgres:postgres@localhost:2022/chatDB"` (don't forget to `source .env` before starting the app)
+Finally, you'll have to tell the code about the URI of this postgres instance. You can do it using an .env file  where you can put `export POSTGRES_URI="postgresql://postgres:postgres@localhost:2022/chatDB"` (don't forget to load the environment variables `source .env` before starting the app)
 
 Run `python app.py`
 
