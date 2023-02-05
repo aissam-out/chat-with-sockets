@@ -26,6 +26,13 @@ Connected users can be viewed in the "Users" section. To initiate a private chat
 
 # How run the project
 
-To run this project, you'll need to set up a Postgres DB. The easiest way to do it is to run a posstgres container. 
+To run this project, you'll need to set up a Postgres DB. The easiest way to do it is to run a postgres container. 
 
-To do so, and assuming you have Docker installed in your machine, pull the posgres image `docker pull postgres`, then run a container `docker run --name postgres-example -d -p 2022:5432 -e POSTGRES_PASSWORD=postgres postgres`
+To do so, and assuming you have Docker installed in your machine, pull the posgres image `docker pull postgres`, then start a postgres instance `docker run --name postgres-example -d -p 2023:5432 -e POSTGRES_PASSWORD=postgres postgres`
+
+Now that you have the DB up and running, you can connect to postgres using command line, or something like DBeaver, then create a "chatDB" database.
+
+Finally, you'll have to tell the code about the URI of this postgres instance. You can do it using an .env file  where you can put `export POSTGRES_URI="postgresql://postgres:postgres@localhost:2022/chatDB"` (don't forget to `source .env` before starting the app)
+
+Run `python app.py`
+
