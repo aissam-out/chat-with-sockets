@@ -2,6 +2,6 @@
 
 This project is a chat application based on websockets, it supports both private messages and chatrooms. The code also covers the registration and login processes. The database being utilized is Postgres.
 
-<img src="./images/registration.png" alt="Registration page" align="left" style="display: inline-block; margin: 0 auto; max-width: 300px">
+<img align="left" src="./images/registration.png" alt="Registration page">
 
-<img src="./images/login.png" alt="Login page" align="right" style="display: inline-block; margin: 0 auto; max-width: 300px">
+<img align="right" src="./images/login.png" alt="Login page">
