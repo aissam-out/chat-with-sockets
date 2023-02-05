@@ -28,7 +28,7 @@ Connected users can be viewed in the "Users" section. To initiate a private chat
 
 To run this project, you'll need to set up a Postgres DB. The easiest way to do it is to run a postgres container. 
 
-To do so, and assuming you have Docker installed in your machine, pull the posgres image `docker pull postgres`, then start a postgres instance `docker run --name postgres-example -d -p 2023:5432 -e POSTGRES_PASSWORD=postgres postgres`
+To do so, and assuming you have Docker installed in your machine, pull the posgres image `docker pull postgres`, then start a postgres instance `docker run --name pg_instance -d -p 2023:5432 -e POSTGRES_PASSWORD=postgres postgres`
 
 Now that you have the DB up and running, you can connect to postgres using command line, or something like DBeaver, then create a "chatDB" database.
 
