@@ -5,3 +5,8 @@ This project is a chat application based on websockets, it supports both private
 <img align="left" src="./images/registration.png" alt="Registration page">
 
 <img align="right" src="./images/login.png" alt="Login page">
+
+<p float="left">
+  <img align="left" src="./images/registration.png" alt="Registration page">
+  <img align="right" src="./images/login.png" alt="Login page">
+</p>
