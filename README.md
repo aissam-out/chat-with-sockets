@@ -38,3 +38,7 @@ Run `python create.py`
 
 Congrats. Everything is set up now. All you have to do is to run `python app.py` and enjoy :D
 
+
+### Aknowledgement
+
+While learning websockets I learned a lot from this [repo](https://github.com/sandeepsudhakaran/rchat-app). Special thanks to the creator.
