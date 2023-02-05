@@ -30,11 +30,11 @@ To run this project, you'll need to set up a Postgres DB. The easiest way to do 
 
 To do so, and assuming you have Docker installed in your machine, pull the posgres image `docker pull postgres`, then start a postgres instance `docker run --name pg_instance -d -p 2023:5432 -e POSTGRES_PASSWORD=postgres postgres`
 
-Now that you have the DB up and running, you can connect to postgres using command line, or something like DBeaver, then create a "chatDB" database.
+Now that you have the DB up and running, you can connect to postgres using command line, or a SQL client like DBeaver, then create a "chatDB" database.
 
-Finally, you'll have to tell the code about the URI of this postgres instance. You can do it using an .env file  where you can put `export POSTGRES_URI="postgresql://postgres:postgres@localhost:2022/chatDB"` (don't forget to load the environment variables `source .env` before starting the app)
+The code extracts the URI of this postgres instance from your environment variables. Thus, make sure you have an .env file containing `export POSTGRES_URI="postgresql://postgres:postgres@localhost:2023/chatDB"` (Also, don't forget to load the environment variables `source .env` before starting the app)
 
 Run `python create.py`
 
-Run `python app.py`
+Congrats. Everything is set up now. All you have to do is to run `python app.py` and enjoy :D
 
