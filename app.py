@@ -28,7 +28,7 @@ def load_user(id):
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # Available channels for chat
-ROOMS = ["general", "web dev", "mobile dev", "tests", "devOps", "design", "cyber security", "support"]
+ROOMS = ["General", "Web Dev", "Mobile Dev", "Tests", "DevOps", "Design", "Cyber Security", "Support"]
 USERS = {}
 
 # The root path for registration
