@@ -23,3 +23,9 @@ Connected users can be viewed in the "Users" section. To initiate a private chat
 .
 <img align="right" src="./images/chatprivate2.png" alt="Private chat page">
 
+
+# How run the project
+
+To run this project, you'll need to set up a Postgres DB. The easiest way to do it is to run a posstgres container. 
+
+To do so, and assuming you have Docker installed in your machine, pull the posgres image `docker pull postgres`, then run a container `docker run --name postgres-example -d -p 2022:5432 -e POSTGRES_PASSWORD=postgres postgres`
